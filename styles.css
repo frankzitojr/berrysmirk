@@ -1,0 +1,104 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.imgur.com/HCIZ5mt.png');
+    background-color: #ffe87b; /* Background color */
+    background-repeat: repeat; /* Makes the image repeat */
+    background-size: 65%; /* Keeps the original size of the image */
+    color: #fff; /* White text color */
+    display: flex; /* Flexbox for centering content vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px; /* Padding to prevent content from touching edges */
+}
+
+
+.profile-container {
+    max-width: 600px; /* Reduced width for the profile container */
+    width: 100%; /* Make it responsive */
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark gray background for the profile container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for contrast */
+    border: 1px solid #444; /* Small outline around the content container */
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the profile header */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative; /* To position social links absolutely */
+}
+
+.profile-picture {
+    margin-bottom: 10px;
+}
+
+.profile-picture img {
+    width: 120px; /* Fixed size for profile picture */
+    height: 120px; /* Fixed size for profile picture */
+    border-radius: 50%; /* Circular profile picture */
+    border: 2px solid #fff; /* White border around the picture */
+}
+
+.profile-info {
+    text-align: center; /* Center align text */
+}
+
+.profile-info h1 {
+    font-size: 28px; /* Font size for name */
+    color: #fff; /* White text color */
+    margin: 0;
+    display: flex;
+    align-items: center; /* Align items in the center */
+}
+
+.verified {
+    color: #888; /* Grey color for verified checkmark */
+    font-size: 18px; /* Adjust size for better alignment */
+    margin-left: 5px; /* Space between name and checkmark */
+}
+
+.hire-button {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #444; /* Dark gray background for button */
+    color: #fff; /* White text color */
+    font-size: 14px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+    margin-top: 10px;
+}
+
+.hire-button:hover {
+    background-color: #555; /* Lighter gray on hover */
+}
+
+.social-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    color: #fff; /* White color for icons */
+    font-size: 20px; /* Smaller size for social media icons */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-links a:hover {
+    color: #ddd; /* Lighter gray on hover */
+}
+
+/* Styling for the content sections */
+.bio-social, .profile-tabs, .recent-activity, .settings-section {
+    margin: 20px 0; /* Space between sections */
+}
